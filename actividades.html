@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Actividades programadas en el club">
+    <title>Tienda de Patinaje Artístico y Hockey</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png" />
+
+    <link rel="stylesheet" href="./styles/estilos.css" />
+  </head>
+  <body>
+    <!-- barra de navegacion lateral -->
+    <div id="mySidenav" class="sidenav">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <span class="headerButton">
+        <a href="./index.html">
+          <i class="fa-solid fa-house"></i>
+          Inicio</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./horario.html" id="horario-clases-link">
+          <i class="fa-solid fa-calendar-days"></i>
+          Horario clases</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./shopping.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Shopping Hielo</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./actividades.html">
+          <i class="fa-solid fa-table"></i>
+          Tablón actividades</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./contacto.html">
+          <i class="fa-solid fa-envelope"></i>
+          Contacto</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./cart.html">
+          <i class="fa-solid fa-cart-shopping"></i> Carrito</a
+        >
+      </span>
+    </div>
+    <div class="container">
+      <div class="fixed-header">
+        <header>
+          <button class="menu-button" id="menu-button" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <img src="img/konki1.jpg" alt="Logo del Club de Hielo" class="logo" />
+          <nav class="menu">
+            <div class="navContainer">
+              <span class="headerButton">
+                <a href="./index.html">
+                  <i class="fa-solid fa-house"></i>
+                  Inicio</a
+                >
+              </span>
+              <span class="headerButton">
+                <a href="./horario.html" >
+                  <i class="fa-solid fa-calendar-days"></i>
+                  Horario clases</a
+                >
+              </span>
+              <span class="headerButton">
+                <a href="./shopping.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Shopping Hielo</a
+                >
+              </span>
+              <span class="headerButton">
+                <a href="./actividades.html">
+                  <i class="fa-solid fa-table"></i>
+                  Tablón actividades</a
+                >
+              </span>
+              <span class="headerButton">
+                <a href="./contacto.html">
+                  <i class="fa-solid fa-envelope"></i>
+                  Contacto</a
+                >
+              </span>
+              <span id="profile-menu" class="headerButton">
+                <a href="/perfil.html">
+                  <i class="fa-solid fa-user"></i>
+                  Tu perfil</a
+                >
+              </span>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <main>
+        <section class="bg-section" id="inicio">
+          <h1>Tablón de actividades</h1>
+        </section>
+        <section class="tabla-container">
+          <table class="tabla">
+            <caption>
+              Febrero 2024
+            </caption>
+            <thead>
+              <tr>
+                <th>Lu</th>
+                <th>Ma</th>
+                <th>Mie</th>
+                <th>Ju</th>
+                <th>Vi</th>
+                <th>Sá</th>
+                <th>Do</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>20</td>
+                <td>21</td>
+                <td>22</td>
+                <td>23</td>
+                <td>24</td>
+                <td>25</td>
+              </tr>
+              <tr>
+                <td>26</td>
+                <td>27</td>
+                <td>28</td>
+                <td>29</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section links">
+          <h2>Enlaces rápidos</h2>
+          <ul id="enlacesRapidos">
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-section about">
+          <h2 class="logo-text">Club de Hielo</h2>
+          <p>
+            El Club de Hielo es el lugar perfecto para disfrutar del patinaje
+            sobre hielo, celebrar cumpleaños y participar en eventos especiales.
+            ¡Únete a nosotros para la diversión invernal!
+          </p>
+          <div class="contact">
+            <span><i class="fas fa-phone"></i> &nbsp; 952 10 46 87</span>
+            <span
+              ><i class="fas fa-envelope"></i> &nbsp; info@clubdehielo.com</span
+            >
+          </div>
+        </div>
+        <div class="footer-section social">
+          <h2>Síguenos</h2>
+          <br />
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 Club de Hielo | Diseñado por Camila
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/16652f19b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="sideBar.js"></script>
+  </body>
+</html>

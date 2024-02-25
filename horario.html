@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Camila" />
+    <meta name="robots" content="index, follow" />
+    <meta
+      name="description"
+      content="El Club de Hielo es el lugar perfecto para disfrutar del patinaje sobre hielo, 
+    celebrar cumpleaños y participar en eventos especiales. ¡Únete a nosotros para la diversión invernal!"
+    />
+    <meta
+      name="keywords"
+      content="Club de Hielo, patinaje sobre hielo, horario de clases, actividades, contacto"
+    />
+    <title>Horario</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="./styles/estilos.css" />
+    <link rel="stylesheet" href="./styles/normalize.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet/dist/leaflet.css"
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <!-- barra de navegacion lateral -->
+    <div id="mySidenav" class="sidenav">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <span class="headerButton">
+        <a href="./index.html">
+          <i class="fa-solid fa-house"></i>
+          Inicio</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./horario.html" id="horario-clases-link">
+          <i class="fa-solid fa-calendar-days"></i>
+          Horario clases</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./shopping.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Shopping Hielo</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./actividades.html">
+          <i class="fa-solid fa-table"></i>
+          Tablón actividades</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./contacto.html">
+          <i class="fa-solid fa-envelope"></i>
+          Contacto</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./cart.html">
+          <i class="fa-solid fa-cart-shopping"></i> Carrito</a
+        >
+      </span>
+    </div>
+    <div class="fixed-header">
+      <header>
+        <button class="menu-button" id="menu-button" onclick="openNav()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/konki1.jpg" alt="Logo del Club de Hielo" class="logo" />
+        <nav class="menu">
+          <div class="navContainer">
+            <span class="headerButton">
+              <a href="./index.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio</a
+              >
+            </span>
+            <span class="headerButton">
+              <a href="./horario.html">
+                <i class="fa-solid fa-calendar-days"></i>
+                Horario clases</a
+              >
+            </span>
+            <span class="headerButton">
+              <a href="./shopping.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Shopping Hielo</a
+              >
+            </span>
+            <span class="headerButton">
+              <a href="./actividades.html">
+                <i class="fa-solid fa-table"></i>
+                Tablón actividades</a
+              >
+            </span>
+            <span class="headerButton">
+              <a href="./contacto.html">
+                <i class="fa-solid fa-envelope"></i>
+                Contacto</a
+              >
+            </span>
+            <span id="profile-menu" class="headerButton">
+              <a href="/perfil.html">
+                <i class="fa-solid fa-user"></i>
+                Tu perfil</a
+              >
+            </span>
+          </div>
+        </nav>
+      </header>
+      <section class="bg-section" id="inicio">
+        <h1>Horario</h1>
+      </section>
+    </div>
+    <section class="horario-clases">
+      <div class="tipo-clase">
+        <div class="container">
+          <p class="numero-clase">01</p>
+          <h2>Iniciación niños y grupo oso polar</h2>
+          <h3>de 10 a 17 años</h3>
+          <h2>Grupo pinguino</h2>
+          <h3>de 3 a 10 años</h3>
+        </div>
+        <div class="text-container">
+          <h3>Clase pinguino</h3>
+          <ul>
+            <li>Lunes 17:00-18:00hs</li>
+            <li>Miércoles 17:00-18:00hs</li>
+          </ul>
+          <h3>Clase oso polar</h3>
+          <ul>
+            <li>Lunes 17:00-18:00hs</li>
+            <li>Miércoles 17:00-18:00hs</li>
+          </ul>
+        </div>
+        <img
+          src="./img/figure-skating-3198861_1280.jpg"
+          alt=""
+          width="300"
+          height="200"
+        />
+      </div>
+      <div class="tipo-clase">
+        <div class="container">
+          <p class="numero-clase">02</p>
+          <h2>Grupo adultos</h2>
+          <h3>a partir de 17 años</h3>
+          <h2>Grupo competición</h2>
+          <h3>Cursillistas avanzados</h3>
+        </div>
+        <div class="text-container">
+          <h3>Clase adultos</h3>
+          <ul>
+            <li>Lunes 17:00-18:00hs</li>
+            <li>Miércoles 17:00-18:00hs</li>
+          </ul>
+          <h3>Clase competición</h3>
+          <ul>
+            <li>Lunes 17:00-18:00hs</li>
+            <li>Miércoles 17:00-18:00hs</li>
+          </ul>
+        </div>
+        <img
+          src="./img/21-10-2019-skate-america011.jpg"
+          alt=""
+          width="300"
+          height="200"
+        />
+      </div>
+      <div class="tipo-clase">
+        <div class="container">
+          <p class="numero-clase">03</p>
+          <h2>Hockey niños</h2>
+          <h3>de 6 a 15 años</h3>
+          <h2>Hockey adultos</h2>
+          <h3>Equipo competición y avanzado</h3>
+        </div>
+        <div class="text-container">
+          <h3>Clase hockey adultos</h3>
+          <ul>
+            <li>Lunes 17:00-18:00hs</li>
+            <li>Miércoles 17:00-18:00hs</li>
+          </ul>
+          <h3>Clase hockey niños</h3>
+          <ul>
+            <li>Lunes 17:00-18:00hs</li>
+            <li>Miércoles 17:00-18:00hs</li>
+          </ul>
+        </div>
+        <img
+          src="./img/istockphoto-1186323725-2048x2048.jpg"
+          alt=""
+          width="300"
+          height="200"
+          style="margin-top: 20px"
+        />
+      </div>
+    </section>
+    <div class="boton">
+      <button id="openPopup" class="boton-inscribir">Incríbete</button>
+    </div>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <div class="popup-content-container">
+          <h2 class="popup-header">INSCRÍBETE</h2>
+          <div class="content">
+            <span class="close" id="closePopup">&times;</span>
+            <h4>A que clase te quieres unir?</h4>
+            <select name="select-class" id="select-class">
+              <option value="1">Iniciación niños</option>
+              <option value="2">Grupo adultos y competición</option>
+              <option value="3">Hockey niños y adultos</option>
+            </select>
+            <h4>Horario elegido</h4>
+            <select name="select-schedule" id="select-schedule">
+              <option value="1">Lunes 17:00-18:00hs</option>
+              <option value="2">Miércoles 17:00-18:00hs</option>
+              <option value="3">Viernes 17:00-18:00hs</option>
+            </select>
+            <h4>Día o dias elegidos</h4>
+            <select name="select-days" id="select-days">
+              <option value="1">Lunes</option>
+              <option value="2">Miércoles</option>
+              <option value="3">Viernes</option>
+            </select>
+            <button id="submitForm">¡Apuntante!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="successPopup" class="success-popup">
+      <div class="success-popup-content">
+        <p>Te has inscrito correctamente</p>
+      </div>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section links">
+          <h2>Enlaces rápidos</h2>
+          <ul id="enlacesRapidos">
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-section about">
+          <h2 class="logo-text">Club de Hielo</h2>
+          <p>
+            El Club de Hielo es el lugar perfecto para disfrutar del patinaje
+            sobre hielo, celebrar cumpleaños y participar en eventos especiales.
+            ¡Únete a nosotros para la diversión invernal!
+          </p>
+          <div class="contact">
+            <span><i class="fas fa-phone"></i> &nbsp; 952 10 46 87</span>
+            <span
+              ><i class="fas fa-envelope"></i> &nbsp; info@clubdehielo.com</span
+            >
+          </div>
+        </div>
+        <div class="footer-section social">
+          <h2>Síguenos</h2>
+          <br />
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 Club de Hielo | Diseñado por Camila
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/16652f19b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script src="index.js"></script>
+    <script src="sideBar.js"></script>
+  </body>
+</html>

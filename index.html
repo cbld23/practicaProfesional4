@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Camila" />
+    <meta name="robots" content="index, follow" />
+    <meta name="description" content="El Club de Hielo es el lugar perfecto para disfrutar del patinaje sobre hielo, 
+    celebrar cumpleaños y participar en eventos especiales. ¡Únete a nosotros para la diversión invernal!">
+    <title>Inauguración del Club de Hielo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="./styles/estilos.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet/dist/leaflet.css"
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <!-- barra de navegacion lateral -->
+    <div id="mySidenav" class="sidenav">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <span class="headerButton">
+        <a href="./index.html">
+          <i class="fa-solid fa-house"></i>
+          Inicio</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./horario.html" >
+          <i class="fa-solid fa-calendar-days"></i>
+          Horario clases</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./shopping.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Shopping Hielo</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./actividades.html">
+          <i class="fa-solid fa-table"></i>
+          Tablón actividades</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./contacto.html">
+          <i class="fa-solid fa-envelope"></i>
+          Contacto</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./cart.html">
+          <i class="fa-solid fa-cart-shopping"></i> Carrito</a
+        >
+      </span>
+    </div>
+    <div class="fixed-header">
+      <header>
+        <button class="menu-button" id="menu-button" onclick="openNav()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+        <img src="img/konki1.jpg" alt="Logo del Club de Hielo" class="logo" />
+        <nav class="menu">
+          <div class="navContainer">
+            <span class="headerButton">
+              <a href="./index.html">
+                <i class="fa-solid fa-house"></i>
+                Inicio</a
+              >
+            </span>
+            <span class="headerButton">
+              <a href="./horario.html" id="horario-clases-link">
+                <i class="fa-solid fa-calendar-days"></i>
+                Horario clases</a
+              >
+            </span>
+            <span class="headerButton">
+              <a href="./shopping.html">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Shopping Hielo</a
+              >
+            </span>
+            <span class="headerButton">
+              <a href="./actividades.html">
+                <i class="fa-solid fa-table"></i>
+                Tablón actividades</a
+              >
+            </span>
+            <span class="headerButton">
+              <a href="./contacto.html">
+                <i class="fa-solid fa-envelope"></i>
+                Contacto</a
+              >
+            </span>
+            <span id="profile-menu" class="headerButton">
+              <a href="/perfil.html">
+                <i class="fa-solid fa-user"></i>
+                Tu perfil</a
+              >
+            </span>
+          </div>
+        </nav>
+      </header>
+      <section class="bg-section" id="inicio">
+        <h1>Club de Hielo</h1>
+      </section>
+    </div>
+    <section class="inicio">
+      <p>
+        Ven a disfrutar del club de hielo este invierno, nuestras instalaciones
+        están completamente renovadas. Podrás disfrutar de sesiones públicas y
+        clases según tu nivel.
+      </p>
+      <img src="img/skates-2176562_1280.jpg" alt="foto inicio" class="inicio" />
+    </section>
+    <section class="inauguracion-section">
+      <p>¡¡¡¡Ven a conocernos!!!!!</p>
+    </section>
+    <section class="section-con-foto-y-mapa">
+      <div class="foto">
+        <img
+          src="img/ice-skating-rink-3673123_640.jpg"
+          alt="pista de hielo al aire libre"
+        />
+      </div>
+      <div class="mapa" id="map">
+        <canvas id="canvas"></canvas>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section links">
+          <h2>Enlaces rápidos</h2>
+          <ul id="enlacesRapidos">
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-section about">
+          <h2 class="logo-text">Club de Hielo</h2>
+          <p>
+            El Club de Hielo es el lugar perfecto para disfrutar del patinaje
+            sobre hielo, celebrar cumpleaños y participar en eventos especiales.
+            ¡Únete a nosotros para la diversión invernal!
+          </p>
+          <div class="contact">
+            <span><i class="fas fa-phone"></i> &nbsp; 952 10 46 87</span>
+            <span
+              ><i class="fas fa-envelope"></i> &nbsp; info@clubdehielo.com</span
+            >
+          </div>
+        </div>
+        <div class="footer-section social">
+          <h2>Síguenos</h2>
+          <br />
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 Club de Hielo | Diseñado por Camila
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/16652f19b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://unpkg.com/leaflet/dist/leaflet.js"
+      crossorigin=""
+    ></script>
+    <script src="index.js"></script>
+    <script src="sideBar.js"></script>
+  </body>
+</html>

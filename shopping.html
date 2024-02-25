@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="patinaje artístico, hockey sobre hielo, patines, casco de hockey, protector de cuchilla, equipo de protección">
+    <meta name="description" content="Bienvenido a la Tienda de Patinaje Artístico y Hockey. Encuentra una amplia selección de productos para patinaje y hockey sobre hielo, desde patines hasta equipo de protección.">
+    <title>Tienda de Patinaje Artístico y Hockey</title>
+    <link rel="icon" href="img/favicon.ico" type="image/png" />
+    <link rel="stylesheet" href="./styles/estilos.css" />
+  </head>
+  <body>
+    <!-- barra de navegacion lateral -->
+    <div id="mySidenav" class="sidenav">
+      <a class="closebtn" onclick="closeNav()">&times;</a>
+      <span class="headerButton">
+        <a href="./index.html">
+          <i class="fa-solid fa-house"></i>
+          Inicio</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./horario.html" >
+          <i class="fa-solid fa-calendar-days"></i>
+          Horario clases</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./shopping.html">
+          <i class="fa-solid fa-cart-shopping"></i>
+          Shopping Hielo</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./actividades.html">
+          <i class="fa-solid fa-table"></i>
+          Tablón actividades</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./contacto.html">
+          <i class="fa-solid fa-envelope"></i>
+          Contacto</a
+        >
+      </span>
+      <span class="headerButton">
+        <a href="./cart.html">
+          <i class="fa-solid fa-cart-shopping"></i> Carrito</a
+        >
+      </span>
+    </div>
+    <div class="container">
+      <div class="fixed-header">
+        <header>
+          <button class="menu-button" id="menu-button" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <img src="img/konki1.jpg" alt="Logo del Club de Hielo" class="logo" />
+          <nav class="menu">
+            <div class="navContainer">
+              <span class="headerButton">
+                <a href="./index.html">
+                  <i class="fa-solid fa-house"></i>
+                  Inicio</a
+                >
+              </span>
+              <span class="headerButton">
+                <a href="./horario.html" id="horario-clases-link">
+                  <i class="fa-solid fa-calendar-days"></i>
+                  Horario clases</a
+                >
+              </span>
+              <span class="headerButton">
+                <a href="./shopping.html">
+                  <i class="fa-solid fa-cart-shopping"></i>
+                  Shopping Hielo</a
+                >
+              </span>
+              <span class="headerButton">
+                <a href="./actividades.html">
+                  <i class="fa-solid fa-table"></i>
+                  Tablón actividades</a
+                >
+              </span>
+              <span class="headerButton">
+                <a href="./contacto.html">
+                  <i class="fa-solid fa-envelope"></i>
+                  Contacto</a
+                >
+              </span>
+              <span id="profile-menu" class="headerButton">
+                <a href="/perfil.html">
+                  <i class="fa-solid fa-user"></i>
+                  Tu perfil</a
+                >
+              </span>
+            </div>
+          </nav>
+        </header>
+      </div>
+      <main>
+        <section class="bg-section" id="inicio">
+          <h1>Shopping Hielo</h1>
+        </section>
+        <!-- Buscador de productos y carrito de la compra -->
+        <div class="main-container">
+          <div class="search-header-container">
+            <div class="search-container">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Buscar productos..."
+              />
+              <button id="searchButton">
+                <i class="fa-solid fa-search"></i>
+              </button>
+            </div>
+            <div class="cart-container">
+              <span>Tu cesta</span>
+              <a href="cart.html"
+                ><i class="fa-solid fa-cart-shopping cart-icon"></i
+              ></a>
+            </div>
+          </div>
+          <div class="cards-container">
+            <div class="product-card">
+              <img src="img/patines-iniciacion.png" alt="Producto" />
+              <h2>Patines iniciación</h2>
+              <p>
+                Nuestros equipos de diseño Oxelo han concebido estos patines
+                para la práctica en perfeccionamiento del patinaje sobre hielo
+                recreativo en el exterior.
+              </p>
+              <div class="price-container">
+                <span>54,99 €</span>
+                <div class="submitForm" id="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="img/casco-hockey.png" alt="Producto" />
+              <h2>Casco de Hockey Blanco Juniors CCM 70</h2>
+              <p>
+                El casco de hockey sobre hielo CCM 70 es para el jugador de
+                hockey sobre hielo recreativo
+              </p>
+              <div class="price-container">
+                <span>99,95 €</span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="img/protector-cuchilla.png" alt="Producto" />
+              <h2>Protector de cuchilla de patinaje</h2>
+              <p>
+                Concebido para proteger las cuchillas de los patines fuera de la
+                pista de hielo.
+              </p>
+              <div class="price-container">
+                <span>9,99 € </span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="img/pantalon-hockey.png" alt="Producto" />
+              <h2>Pantalón Hockey 500</h2>
+              <p>
+                Nuestros diseñadores practicantes han desarrollado este pantalón
+                de protección para la práctica del hockey sobre hielo en club.
+              </p>
+              <div class="price-container">
+                <span>29,99 € </span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container">
+            <div class="product-card">
+              <img src="img/pantalon-hockey.png" alt="Producto" />
+              <h2>Pantalón Hockey 500</h2>
+              <p>
+                Nuestros diseñadores practicantes han desarrollado este pantalón
+                de protección para la práctica del hockey sobre hielo en club.
+              </p>
+              <div class="price-container">
+                <span>29,99 € </span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="img/patines-iniciacion.png" alt="Producto" />
+              <h2>Patines iniciación</h2>
+              <p>
+                Nuestros equipos de diseño Oxelo han concebido estos patines
+                para la práctica en perfeccionamiento del patinaje sobre hielo
+                recreativo en el exterior.
+              </p>
+              <div class="price-container">
+                <span>54,99 €</span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="img/casco-hockey.png" alt="Producto" />
+              <h2>Casco de Hockey Blanco Juniors CCM 70</h2>
+              <p>
+                El casco de hockey sobre hielo CCM 70 es para el jugador de
+                hockey sobre hielo recreativo
+              </p>
+              <div class="price-container">
+                <span>99,95 €</span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="img/protector-cuchilla.png" alt="Producto" />
+              <h2>Protector de cuchilla de patinaje</h2>
+              <p>
+                Concebido para proteger las cuchillas de los patines fuera de la
+                pista de hielo.
+              </p>
+              <div class="price-container">
+                <span>9,99 € </span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards-container">
+            <div class="product-card">
+              <img src="img/patines-iniciacion.png" alt="Producto" />
+              <h2>Patines iniciación</h2>
+              <p>
+                Nuestros equipos de diseño Oxelo han concebido estos patines
+                para la práctica en perfeccionamiento del patinaje sobre hielo
+                recreativo en el exterior.
+              </p>
+              <div class="price-container">
+                <span>54,99 €</span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="img/casco-hockey.png" alt="Producto" />
+              <h2>Casco de Hockey Blanco Juniors CCM 70</h2>
+              <p>
+                El casco de hockey sobre hielo CCM 70 es para el jugador de
+                hockey sobre hielo recreativo
+              </p>
+              <div class="price-container">
+                <span>99,95 €</span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="img/protector-cuchilla.png" alt="Producto" />
+              <h2>Protector de cuchilla de patinaje</h2>
+              <p>
+                Concebido para proteger las cuchillas de los patines fuera de la
+                pista de hielo.
+              </p>
+              <div class="price-container">
+                <span>9,99 € </span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+            <div class="product-card">
+              <img src="img/pantalon-hockey.png" alt="Producto" />
+              <h2>Pantalón Hockey 500</h2>
+              <p>
+                Nuestros diseñadores practicantes han desarrollado este pantalón
+                de protección para la práctica del hockey sobre hielo en club.
+              </p>
+              <div class="price-container">
+                <span>29,99 € </span>
+                <div class="submitForm">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="successPopup" class="success-popup">
+          <div class="success-popup-content">
+            <p>Articulo añadido a la cesta</p>
+          </div>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section links">
+          <h2>Enlaces rápidos</h2>
+          <ul id="enlacesRapidos">
+            <li><a href="#">Servicios</a></li>
+            <li><a href="#">Contacto</a></li>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="footer-section about">
+          <h2 class="logo-text">Club de Hielo</h2>
+          <p>
+            El Club de Hielo es el lugar perfecto para disfrutar del patinaje
+            sobre hielo, celebrar cumpleaños y participar en eventos especiales.
+            ¡Únete a nosotros para la diversión invernal!
+          </p>
+          <div class="contact">
+            <span><i class="fas fa-phone"></i> &nbsp; 952 10 46 87</span>
+            <span
+              ><i class="fas fa-envelope"></i> &nbsp; info@clubdehielo.com</span
+            >
+          </div>
+        </div>
+        <div class="footer-section social">
+          <h2>Síguenos</h2>
+          <br />
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2024 Club de Hielo | Diseñado por Camila
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/16652f19b3.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="popup.js"></script>
+    <script src="sideBar.js"></script>
+  </body>
+</html>
